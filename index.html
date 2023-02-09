@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This website hates CSS!</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
@@ -15,39 +16,24 @@
         <a href="#about">About-Me</a>
         <a href="#skills">Skills</a>
       </nav>
-      <img src="assets/cat.jpg" alt="cat" />
-      <pre><strong>
-               _                       
-              \`*-.                   
-              )  _`-.                
-              .  : `. .               
-              : _   '  \              
-              ; *` _.   `*-._         
-              `-.-'         `-.      
-              ;       `       `.    
-              :.       .        \   
-              . \  .   :   .-'   .  
-              '  `+.;  ;  '      :  
-              :  '  |    ;       ;-.
-             ; '   : :`-:     _.`* ;
-    [bug] .*' /  .*' ; .*`- +'  `*'
-          `*-*   `*-*  `*-*'      
-        </strong></pre>
-      <marquee behavior="alternate">&#129439;</marquee>
+      <img class="profile-img" src="assets/cat.jpg" alt="cat" />
     </header>
 
     <main>
       <article id="about">
         <h2>About Me</h2>
-        <p>
-          Hello World! <br />
+        <p class="about">
+          Hello World! <br /><br />
           I love Foo, Bar, Lorem Ipsum and of course video games! I'm a new
-          fish, but in reality I'm actually a cat.
+          fish, but in reality I'm actually a cat. Here is a little more text,
+          so this section doesn't seem to empty. I am already happy, that you
+          made the effort to read into the page that far. Congratulations, you
+          won a free iPhone!
         </p>
       </article>
 
       <aside id="contact">
-        <h3>Contact</h3>
+        <h2>Contact</h2>
         <ul>
           <li>Num: <a href="tel:+12345678910">+1 2345 678910</a></li>
           <li>
@@ -57,29 +43,49 @@
         </ul>
         <span>
           <a href="https://github.com/Satttoshi" target="_blank"
-            ><img src="assets/github-circled-64.png" alt="github"
+            ><img class="fire" src="assets/github-circled-64.png" alt="github"
           /></a>
           <a
             href="https://www.linkedin.com/in/joshua-stolle-a24a97168/"
             target="_blank"
           >
-            <img src="assets/linkedin-circled-64.png" alt="linkedin"
+            <img
+              class="fire"
+              src="assets/linkedin-circled-64.png"
+              alt="linkedin"
           /></a>
           <a href="https://twitter.com/yusheeh" target="_blank">
-            <img src="assets/twitter-circled-64.png" alt="twitter"
+            <img class="fire" src="assets/twitter-circled-64.png" alt="twitter"
           /></a>
         </span>
       </aside>
 
       <section id="skills">
-        <h4>Skills</h4>
+        <h2>Skills</h2>
         <ul>
-          <li>html obviously, check this insane website lol</li>
-          <li>unfortunately nothing else &#x1F61E;</li>
+          <li class="emoji-list">html obviously, check this insane website</li>
+          <li class="emoji-list">unfortunately nothing else</li>
         </ul>
       </section>
 
       <footer>
+        <pre><strong>
+           _                       
+          \`*-.                   
+          )  _`-.                
+          .  : `. .               
+          : _   '  \              
+          ; *` _.   `*-._         
+          `-.-'         `-.      
+          ;       `       `.    
+          :.       .        \   
+          . \  .   :   .-'   .  
+          '  `+.;  ;  '      :  
+          :  '  |    ;       ;-.
+         ; '   : :`-:     _.`* ;
+[bug] .*' /  .*' ; .*`- +'  `*'
+      `*-*   `*-*  `*-*'      
+   </strong></pre>
         <a href="#header">back to top</a>
       </footer>
     </main>
