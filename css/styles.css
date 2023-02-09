@@ -7,7 +7,6 @@ body {
   color: white;
   background-color: rgb(6, 8, 8);
   margin: 50px;
-  max-width: 800px;
 }
 
 h2 {
@@ -19,7 +18,7 @@ h2 {
   box-sizing: border-box;
   padding: 0px 10px 0px 10px;
   display: block;
-  margin: 30px 0px;
+  margin: 60px 0px 30px 0px;
   width: fit-content;
 }
 
@@ -28,7 +27,9 @@ li {
 }
 
 .profile-img {
-  padding: 50px 0px 50px 0px;
+  padding: none;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .about {
@@ -49,13 +50,37 @@ li {
   border: none;
 }
 
-.emoji-list::before {
-  content: "✔";
-  padding-right: 40px;
+.contact-list {
+  margin-bottom: 30px;
 }
 
 #contact > span {
   background-color: rgba(200, 213, 225, 0.7);
   border-radius: 15px;
   padding: 55px 40px 5px 40px;
+}
+
+.emoji-list::before {
+  content: "✔";
+  padding-right: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a[href]:link {
+  color: rgb(112, 217, 255);
+}
+
+a[href]:visited {
+  color: pink;
+}
+
+a[href]:active {
+  color: rgb(4, 228, 38);
+}
+
+a[href]:hover {
+  color: rgb(235, 86, 11);
 }
