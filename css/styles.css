@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: rgb(6, 8, 8);
+  margin: 50px;
+}
+
+/* Titles */
+h2 {
+  border-left: solid 3px;
+  border-right: solid 3px;
+  border-color: rgb(41, 76, 76);
+  border-top: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+  box-sizing: border-box;
+  padding: 0px 10px 0px 10px;
+  display: block;
+  margin: 60px 0px 30px 0px;
+  width: fit-content;
+}
+
+/* Remove dots in list, so a replacement with ::before can be used */
+li {
+  list-style: none;
+}
+
+.profile-img {
+  padding: none;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* About Text, use justify formatting for text and width to align with profile image size */
+.about {
+  max-width: 550px;
+  text-align: justify;
+}
+
+.contact-list {
+  margin-bottom: 30px;
+}
+
+/* Prepares hovering animation of the clickable Icons */
+.fire {
+  content: 5px;
+  border-radius: 50%;
+  padding: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover shadow animation for clickable Icons */
+.fire:hover {
+  box-shadow: 0 0 2px 2px rgb(220, 232, 233), 0 0 4px 4px rgb(155, 196, 205),
+    0 0 6px 6px rgb(120, 166, 181);
+  border: none;
+}
+
+/* Use parent-child selector, this styles the box around the icons */
+#contact > span {
+  background-color: rgba(200, 213, 225, 0.7);
+  border-radius: 15px;
+  padding: 55px 40px 5px 40px;
+}
+
+/* This is for replacing the dots in unordered list elements */
+.emoji-list::before {
+  content: "✔";
+  padding-right: 40px;
+}
+
+/* removes text decoration, like underlined text in case of hyperlinks */
+a {
+  text-decoration: none;
+}
+
+/* This Section should represent styling states of hyperlinks */
+a[href]:link {
+  color: rgb(112, 217, 255);
+}
+
+a[href]:visited {
+  color: pink;
+}
+
+a[href]:active {
+  color: rgb(4, 228, 38);
+}
+
+a[href]:hover {
+  color: rgb(235, 86, 11);
+}
